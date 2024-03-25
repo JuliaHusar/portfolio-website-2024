@@ -1,5 +1,6 @@
 
 import './App.css'
+import React from 'react'
 import {Title} from "./components/TitleComponent.jsx";
 import {DownButton} from "./components/DownButtonComponent.jsx";
 import {Description} from "./components/Description.jsx";
