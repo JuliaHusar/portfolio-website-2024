@@ -17,7 +17,6 @@ export const Description = () => {
                 let translateXValue = itemPosition * 0.4;
                 let limit = 40;
 
-                // Check if the translateX value has reached the limit
                 if(translateXValue > limit) {
                     translateXValue = limit;
                 }
