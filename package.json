@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "http://JuliaHusar.github.io/{portfolio-website-2024}",
+  "homepage": "http://juliahusar.github.io/{portfolio-website-2024}",
   "scripts": {
     "dev": "vite",
     "predeploy" : "npm run build",
