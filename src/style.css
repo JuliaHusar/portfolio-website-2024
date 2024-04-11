@@ -5,6 +5,8 @@
     align-items: start;
     margin-top: 3%;
     padding: 0;
+    transition: all 0.3s ease-out; /* Add this line */
+
 }
 
 .title .develop-boldly {
@@ -17,12 +19,31 @@
     margin: 0;
     padding: 0;
 }
+.develop-boldly {
+    /* Default styles for larger screens */
+}
+
+/* Media query for mobile devices */
+@media screen and (max-width: 768px) {
+   .title .develop-boldly {
+        /* Styles for mobile devices */
+        width: 100%; /* Make the element fit the screen */
+       font-size: 20vw;
+       align-content: center;
+
+    }
+}
 .title .next-line {
     font-family: "Playfair Display-Bold", Helvetica, serif;
     font-weight: 700;
     margin: 0;
     padding: 0;
 }
+.title .next-line:hover {
+    color: #cd5a53;
+    transition: color 0.3s ease-in;
+}
+
 
 .content-container{
     display: flex;
@@ -109,6 +130,14 @@ display: flex;
     transition: all 0.3s ease;
     position: relative;
     z-index: 2;
+}
+
+@media screen and (max-width: 768px){
+    .down-button{
+        margin-top: 20vw;
+    }
+
+
 }
 .project-container{
     position: relative;
@@ -303,6 +332,34 @@ transition: opacity 0.3s ease-in-out, background-color 0.3s ease-out;
 }
 /* Design Philosophy Page */
 #third-section{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    height: 75vh;
+}
+.aboutContainer{
+    color: #242624;
+    grid-column: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 65px;
+    width: 100%;
+    height: auto;
+    position: relative;
+    transition: transform 0.3s ease-in-out;
+}
+.computerImage{
+    grid-column: 1;
+    grid-row: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#third-section svg{
+scale: .6;
+}
+#fourth-section{
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -311,23 +368,21 @@ transition: opacity 0.3s ease-in-out, background-color 0.3s ease-out;
 .contact{
     display: flex;
     flex-direction: column;
-    width: 100%;
-    height: auto;
-    transition: transform 0.3s ease-in-out;
-}
-.contact{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: auto;
+    width: auto;
+    height: 100%;
     transition: transform 0.3s ease-in-out;
     padding: 10px; /* Add padding */
     color: #242624;
     font-size: 4vw;
+    justify-content: center;
+    align-content: center;
 }
 
 .contact > * {
     padding: 0; /* Reduced padding */
     margin: 0;
 }
-
+.aboutContainer {
+    opacity: 0;
+    transition: opacity 0.1s ease-in;
+}

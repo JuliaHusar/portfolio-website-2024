@@ -12,6 +12,7 @@ import bikeProject1 from "../assets/Bike-your-way-1.png";
 import bikeProject2 from "../assets/Bike-your-way-2.png";
 import soundbeans from "../assets/soundbeans1.png";
 import {PopUp} from "./PopUp.jsx";
+import LazyLoad from 'react-lazyload';
 
 const initialText = "My Work";
 
@@ -186,12 +187,16 @@ export const ProjectContainer = () => {
                 <div className="group-container">
                     <div className="project-name">{projects[currentProjectIndex].name}</div>
                     <div className="inner-class-container">
-                        <img src={projects[currentProjectIndex].image[0]} alt="project" className="project-image" style={{opacity: 0.75}} onMouseOver={mouseOverImage} onMouseLeave={mouseLeaveImage} onClick={togglePopup}/>
+                        <LazyLoad>
+                            <img src={projects[currentProjectIndex].image[0]} alt="project" className="project-image"
+                                 style={{opacity: 0.75}} onMouseOver={mouseOverImage} onMouseLeave={mouseLeaveImage}
+                                 onClick={togglePopup}/>
+                        </LazyLoad>
                     </div>
                     {projects[currentProjectIndex].inProgress ? (
                         <div className="in-progress">
                             <div className="button-box">
-                                {!isAboutClicked ? (
+                            {!isAboutClicked ? (
                                     <button onClick={descriptionBlurb}>About</button>
                                 ) : (
                                     <button onClick={destroyDescription}>About</button>

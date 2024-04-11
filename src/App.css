@@ -11,11 +11,26 @@
     grid-template-columns: 1fr 1fr;
     height: 100vh;
 }
+@media screen and (max-width: 768px){
+    .description{
+        font-size: 50px;
+    }
+    #first-section{
+        height: 40vh;
+    }
+    #second-section{
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+    }
+
+}
 .nav-container{
     display: grid;
     padding-right: 3.5%;
     padding-left: 40px;
     grid-template-columns: 1fr 1fr 2fr 1fr 1fr 1fr;
+    grid-gap: 10px;
     z-index: 2;
     background-color: #F2F4F4;
 }
@@ -52,5 +67,19 @@
     width: 100%;
     z-index: 2;
     background-color: #F2F4F4;
+}
+@media  screen and (max-width: 768px){
+    .nav-container{
+        padding-right: 10px;
+        padding-left: 10px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .nav-container a{
+        font-size: 7vw;
+    }
+
+
 }
 
