@@ -26,8 +26,6 @@ const AboutMe = () => {
         }
 
         window.addEventListener('scroll', onScroll);
-
-        // Cleanup function to remove the event listener
         return () => window.removeEventListener('scroll', onScroll);
     }, []);
 

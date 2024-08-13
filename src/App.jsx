@@ -8,6 +8,10 @@ import {Navbar} from "./components/Navbar.jsx";
 import {Contact} from "./components/Contact.jsx";
 import AboutMe from "./components/AboutMe.jsx";
 import {ComputerIcon} from "./components/ComputerIcon.jsx";
+import {
+    createBrowserRouter,
+    RouterProvider,
+} from "react-router-dom";
 
 function App() {
     window.addEventListener('scroll', function() {
@@ -19,6 +23,8 @@ function App() {
             navbar.style.opacity = opacity;
         }
     });
+
+
 
   return (
     <div>
