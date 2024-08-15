@@ -10,7 +10,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
       <BrowserRouter>
           <Routes>
-              <Route path="/portfolio-website-2024" element={<RuinTheAuxPrivacy />} />
+              <Route path="/portfolio-website-2024" element={<App />} />
               <Route path="/portfolio-website-2024/RuinTheAuxPrivacyPolicy" element={<RuinTheAuxPrivacy />} />
           </Routes>
       </BrowserRouter>
