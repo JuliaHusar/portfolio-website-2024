@@ -11,6 +11,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
       <BrowserRouter>
           <Routes>
               <Route path="/portfolio-website-2024" element={<App />} />
+              <Route path="/portfolio-website-2024/RuinTheAuxPrivacyPolicy" element={<RuinTheAuxPrivacy />} />
           </Routes>
       </BrowserRouter>
   </React.StrictMode>,
