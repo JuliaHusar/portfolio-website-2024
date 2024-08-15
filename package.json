@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://JuliaHusar.github.io/portfolio-website-2024/",
+  "homepage": "https://juliahusar.github.io/portfolio-website-2024/",
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
