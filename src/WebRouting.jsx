@@ -11,7 +11,8 @@ export const WebRouting = createBrowserRouter([
             {
                 path: "/RuinTheAuxPrivacyPolicy",
                 element: <RuinTheAuxPrivacy/>
-            }
+            },
+
         ]
     }
 ]);
