@@ -48,7 +48,7 @@ function App() {
                         </div>
                     </div>
                 } />
-                <Route path="/RuinTheAuxPrivacyPolicy" element={<RuinTheAuxPrivacy />} />
+                <Route path="/RuinTheAuxPrivacyPolicy" element={<RuinTheAuxPrivacy/>} />
             </Routes>
         </HashRouter>
     );
