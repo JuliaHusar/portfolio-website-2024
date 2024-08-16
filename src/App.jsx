@@ -13,6 +13,7 @@ import {
     createBrowserRouter, Route,
     RouterProvider, Routes,
 } from "react-router-dom";
+import {RuinTheAuxPrivacy} from "./components/RuinTheAuxPrivacy.jsx";
 
 function App() {
     window.addEventListener('scroll', function() {
