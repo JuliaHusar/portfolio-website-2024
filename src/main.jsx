@@ -8,10 +8,6 @@ import {RuinTheAuxPrivacy} from "./components/RuinTheAuxPrivacy.jsx";
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-      <BrowserRouter>
-          <Routes>
-              <Route path="/portfolio-website-2024" element={<App />} />
-          </Routes>
-      </BrowserRouter>
+      <App/>
   </React.StrictMode>,
 )
