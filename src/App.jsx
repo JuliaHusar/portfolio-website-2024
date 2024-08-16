@@ -9,8 +9,9 @@ import {Contact} from "./components/Contact.jsx";
 import AboutMe from "./components/AboutMe.jsx";
 import {ComputerIcon} from "./components/ComputerIcon.jsx";
 import {
-    createBrowserRouter,
-    RouterProvider,
+    BrowserRouter,
+    createBrowserRouter, Route,
+    RouterProvider, Routes,
 } from "react-router-dom";
 
 function App() {
@@ -26,30 +27,37 @@ function App() {
 
 
 
-  return (
-    <div>
-        <div id="first-section">
-            <Title />
-            <DownButton />
-        </div>
-        <div className="navbar fixed">
-            <Navbar/>
-        </div>
-        <div id="second-section">
-            <Description/>
-            <div id="project-location">
-                <ProjectContainer/>
-            </div>
-        </div>
-        <div id="third-section">
-            <AboutMe/>
-            <ComputerIcon/>
-        </div>
-        <div id="fourth-section">
-            <Contact/>
-        </div>
-    </div>
-  )
+    return (
+        <BrowserRouter basename="/portfolio-website-2024">
+            <Routes>
+                <Route path="/" element={
+                    <div>
+                        <div id="first-section">
+                            <Title />
+                            <DownButton />
+                        </div>
+                        <div className="navbar fixed">
+                            <Navbar />
+                        </div>
+                        <div id="second-section">
+                            <Description />
+                            <div id="project-location">
+                                <ProjectContainer />
+                            </div>
+                        </div>
+                        <div id="third-section">
+                            <AboutMe />
+                            <ComputerIcon />
+                        </div>
+                        <div id="fourth-section">
+                            <Contact />
+                        </div>
+                    </div>
+                } />
+                <Route path="/RuinTheAuxPrivacyPolicy" element={<RuinTheAuxPrivacy />} />
+            </Routes>
+        </BrowserRouter>
+    );
 }
 
 export default App
